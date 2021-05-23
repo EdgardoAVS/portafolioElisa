@@ -1,0 +1,155 @@
+ :root{
+     /* COLORES */
+     --black: #0F0A0A;
+     --primary: #42E2B8;
+     --gradient: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+ }
+ 
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ html{
+     font-size: 62.5%;
+     font-family: 'Oxygen', sans-serif;     
+ }
+
+ body{
+    background: var(--gradient);     
+    background-repeat: no-repeat;
+ }
+
+ .wrapper{
+     width: 90%;
+     margin: 0 auto;
+ }
+
+ .header{
+     height: 81px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .header-button{
+     width: 151px;
+     height: 49px;
+     border-radius: 90px;
+     border: 2px solid var(--black);
+     background: var(--primary);
+ }
+
+ .header-button a{
+     text-decoration: none;
+     color: var(--black);
+     font-weight: 700;
+     font-size: 1.4rem;
+     line-height: 22.65px;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 90px;
+ }
+
+ .main-section h3{
+     font-size: 4.8rem;
+     font-weight: 700;
+     line-height: 77.66px;
+     color: var(--black);
+ }
+ .main-section h2{
+    font-size: 5.9rem;
+    font-weight: 700;
+    line-height: 95.46px;
+    color: var(--black);
+}
+.main-section p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 25.89px;
+    color: var(--black);
+    padding: 16px 0;
+}
+
+.main-section a span{
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+
+.main-section a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-container{
+    width: 44px;
+    height: 44px;
+    border: 2px solid var(--black);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 14px;  
+    background-color: var(--primary);    
+}
+
+
+.main-section a .phone{
+    background-image: url('../assets/icons/icon-phone.svg');
+}
+.main-section a .email{
+    background-image: url('../assets/icons/icon-important_mail.svg');
+}
+.main-section a .instagram{
+    background-image: url('../assets/icons/icon-instagram.svg');
+}
+.main-section a .twitter{
+    background-image: url('../assets/icons/icon-twitter_squared.svg');
+}
+
+.comment-section{
+    width: 100%;
+    height: 481px;
+    margin-top: 80px;
+}
+
+.comment-section h2{
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 38.83px;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.comment-section p{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 38.83px;
+    color: var(--black);
+    text-align: center;
+}
+
+.arrow-down{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.arrow-down span{
+    background-image: url('../assets/icons/arrow-down.svg');
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
