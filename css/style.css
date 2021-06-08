@@ -34,6 +34,23 @@
      justify-content: space-between;
  }
 
+ .header-nav a{
+     font-weight: 700;
+     font-size: 1.4rem;
+     line-height: 22.65px;
+     color: var(--black);
+     text-transform: uppercase;
+     margin: 0 20px;
+     letter-spacing: 1.25px;
+     text-decoration: none;
+     opacity: 0.5;
+     display: none;
+ }
+
+ .header-nav a:target, .header-nav a:hover{
+     opacity: 1;
+ }
+
  .header-button{
      width: 151px;
      height: 49px;
@@ -316,7 +333,7 @@ label span {
     max-width: 543px;
     height: 50px;
     border-radius: 8px;
-    color: #FFFFFF;
+    color: var(--black);
     border: 1px solid rgba(133, 140, 148, 1);
     padding: 12px 16px 12px 16px;
     font-size: 1.6rem;
@@ -385,6 +402,11 @@ label span {
 .footer {
     text-align: center;
 }
+
+.footer-logo {
+    display: none;
+}
+
 .footer p {
     font-weight: 400;
     font-size: 1.6rem;
@@ -393,4 +415,68 @@ label span {
 
 footer p {
     margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 1000px;
+    }
+    .main-section {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .main-section-img {
+        width: 70%;
+    }
+    .main-content {
+        margin-top: 45px;
+    }
+    .header-nav a {
+        display: inline;
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: row-reverse;  
+        align-items: center;  
+    }
+    .project-img {
+        margin: auto 0 auto 30px;
+        width: 100%;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+    .project-code {
+        width: 100%;
+        margin-right: 10px;
+    }
+    .marvol {
+        flex-direction: row;
+    }
+    .netnet .project-img{
+        width: 60%;
+    }
+    .contact-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .footer-logo{
+        display: inline-block;
+    }
+    .footer-made-by {
+        display: flex;
+    }
+    .footer-social-media {
+        display: flex;
+    }
+
 }
